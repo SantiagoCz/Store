@@ -8,6 +8,7 @@ import santiagoczarny.store.entities.Status;
 import santiagoczarny.store.repositories.PersonRepository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class PersonService {
@@ -32,4 +33,7 @@ public class PersonService {
         save(person);
     }
 
+    public Optional<Person> findPersonByDniOptional(String dni) {
+        return personRepository.findByDni(dni);
+    }
 }
