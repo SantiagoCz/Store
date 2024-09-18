@@ -1,9 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
+<html xmlns:th="http://www.thymeleaf.org">
+<main th:fragment="content">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard de Administración - Tienda Rock</title>
     <style>
         * {
             box-sizing: border-box;
@@ -126,7 +123,7 @@
         <button class="action-button">Agregar Nuevo Producto</button>
         <button class="action-button">Reportes de Ventas</button>
         <button class="action-button">Configurar Tienda</button>
-        <button class="action-button">Gestionar Administradores</button>
+        <button class="action-button" onclick="window.location.href='/user/new';">Gestionar Administradores</button>
     </div>
 </div>
 </body>
